@@ -45,7 +45,7 @@ namespace Final_Proj
                     break;
                 case 2: //Start Gameplay
                     startLabel.Text = "Girl";
-                    howtoplaylabel.Text "Boy";
+                    howtoplaylabel.Text = "Boy";
                     break;
                 case 3: //how to play
                     this.BackColor = Color.Black;
