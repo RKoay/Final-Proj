@@ -234,7 +234,7 @@ namespace Final_Proj
                     imageT.BackColor = Color.White;
                     imageT.Location = new Point(12, 5);
                     imageT.Size = new Size(746, 385);
-                    imageT.Text = "";
+                    imageT.Image = null;
                     imageT.Visible = true;///
                     titleLabel.Visible = false;///
                     startLabel.Location = new Point(274, 400);
@@ -249,7 +249,7 @@ namespace Final_Proj
                     imageT.BackColor = Color.White;
                     imageT.Location = new Point(12, 5);
                     imageT.Size = new Size(746, 385);
-                    imageT.Text = "";
+                    imageT.Image = null;
                     imageT.Visible = true;///
                     titleLabel.Visible = false;///
                     startLabel.Location = new Point(274, 400);
@@ -264,7 +264,7 @@ namespace Final_Proj
                     imageT.BackColor = Color.White;
                     imageT.Location = new Point(12, 5);
                     imageT.Size = new Size(746, 385);
-                    imageT.Text = "";
+                    imageT.Image = null;
                     imageT.Visible = true;///
                     titleLabel.Visible = false;///
                     startLabel.Location = new Point(274, 400);
