@@ -18,6 +18,10 @@ namespace Final_Proj
         public mainMenu()
         {
             InitializeComponent();
+            hungerlabel.Visible = false;
+            hygienelabel.Visible = false;
+            loolabel.Visible = false;
+            entertainmentlabel.Visible = false;
             imageO.Visible = false;
             imageT.Visible = false;
             titleLabel.Visible = true;
@@ -25,6 +29,7 @@ namespace Final_Proj
             howtoplaylabel.Visible = true;
             instructionlabel.Visible = true;
             nameinput.Visible = false;
+
             titleLabel.Text = "Game Menu";
             startLabel.Text = "Start Gameplay";
             howtoplaylabel.Text = "How To Play";
@@ -32,6 +37,14 @@ namespace Final_Proj
             //startLabel.Location = new Point(100, 100);
             //startLabel.Text = "H";
         }
+        public void needsBar(int needsX, int needsY)
+        {
+            Graphics Draw = this.CreateGraphics();
+            Pen drawNeeds = new Pen(Color.Black, 10);
+            SolidBrush fillNeeds = new SolidBrush(Color.LightGreen);
+            Draw.DrawRectangle(drawNeeds, needsX, needsY, 120, 20);
+        }
+
 
         private void mainMenu_KeyDown(object sender, KeyEventArgs e)
         {
@@ -61,6 +74,10 @@ namespace Final_Proj
             switch (scene)
             {
                 case 2: //Start Gameplay
+                    hungerlabel.Visible = false;
+                    hygienelabel.Visible = false;
+                    loolabel.Visible = false;
+                    entertainmentlabel.Visible = false;
                     imageO.Visible = false;
                     imageT.Visible = false;
                     titleLabel.Visible = true;
@@ -76,6 +93,10 @@ namespace Final_Proj
                     instructionlabel.Text = "Press Y to choose a girl character and Press U to choose a guy character";
                     break;
                 case 3: //how to play
+                    hungerlabel.Visible = false;
+                    hygienelabel.Visible = false;
+                    loolabel.Visible = false;
+                    entertainmentlabel.Visible = false;
                     imageO.Visible = false;
                     imageT.Visible = false;
                     titleLabel.Visible = true;
@@ -99,6 +120,10 @@ namespace Final_Proj
                     instructionlabel.Text = "Press Y to proceed";
                     break;
                 case 4: //girl
+                    hungerlabel.Visible = false;
+                    hygienelabel.Visible = false;
+                    loolabel.Visible = false;
+                    entertainmentlabel.Visible = false;
                     titleLabel.Visible = true;
                     startLabel.Visible = false;
                     howtoplaylabel.Visible = true;
@@ -114,6 +139,10 @@ namespace Final_Proj
                     instructionlabel.Text = "Press Y for the girl on the right and press U for the girl on the left";
                     break;
                 case 5: //guy
+                    hungerlabel.Visible = false;
+                    hygienelabel.Visible = false;
+                    loolabel.Visible = false;
+                    entertainmentlabel.Visible = false;
                     titleLabel.Visible = true;
                     startLabel.Visible = false;
                     howtoplaylabel.Visible = true;
@@ -127,6 +156,10 @@ namespace Final_Proj
                     instructionlabel.Text = "Press Y for the guy on the right and press U for the guy on the left";
                     break;
                 case 6: //girlone
+                    hungerlabel.Visible = false;
+                    hygienelabel.Visible = false;
+                    loolabel.Visible = false;
+                    entertainmentlabel.Visible = false;
                     titleLabel.Visible = true;
                     titleLabel.Text = "Naming";
                     startLabel.Location = new Point(100, 170);
@@ -149,6 +182,10 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 7: //guyone
+                    hungerlabel.Visible = false;
+                    hygienelabel.Visible = false;
+                    loolabel.Visible = false;
+                    entertainmentlabel.Visible = false;
                     titleLabel.Visible = true;
                     titleLabel.Text = "Naming";
                     startLabel.Location = new Point(100, 170);
@@ -171,6 +208,10 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 8: //girltwo
+                    hungerlabel.Visible = false;
+                    hygienelabel.Visible = false;
+                    loolabel.Visible = false;
+                    entertainmentlabel.Visible = false;
                     titleLabel.Visible = true;
                     titleLabel.Text = "Naming";
                     startLabel.Location = new Point(100, 170);
@@ -193,6 +234,10 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 9: //guytwo
+                    hungerlabel.Visible = false;
+                    hygienelabel.Visible = false;
+                    loolabel.Visible = false;
+                    entertainmentlabel.Visible = false;
                     titleLabel.Visible = true;
                     titleLabel.Text = "Naming";
                     startLabel.Location = new Point(100, 170);
@@ -215,6 +260,27 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 10://girlone house scene
+                    hungerlabel.ForeColor = Color.White;
+                    entertainmentlabel.ForeColor = Color.White;
+                    loolabel.ForeColor = Color.White;
+                    hygienelabel.ForeColor = Color.White;
+                    hungerlabel.Location = new Point(120, 420);
+                    entertainmentlabel.Location = new Point(120, 440);
+                    loolabel.Location = new Point(120, 460);
+                    hygienelabel.Location = new Point(120, 480);
+                    hungerlabel.Size = new Size(120, 20);
+                    entertainmentlabel.Size = new Size(120, 20);
+                    loolabel.Size = new Size(120, 20);
+                    hygienelabel.Size = new Size(120, 20);
+                    hungerlabel.Visible = true;
+                    hygienelabel.Visible = true;
+                    loolabel.Visible = true;
+                    entertainmentlabel.Visible = true;
+                    hungerlabel.Text = "Hunger";
+                    entertainmentlabel.Text = "Entertainment";
+                    loolabel.Text = "Loo";
+                    hygienelabel.Text = "Hygiene";
+
                     imageO.Visible = true;///
                     imageT.BackColor = Color.White;
                     imageT.Location = new Point(12, 5);

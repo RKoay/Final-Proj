@@ -107,36 +107,32 @@
             // 
             // hungerlabel
             // 
-            this.hungerlabel.AutoSize = true;
             this.hungerlabel.Location = new System.Drawing.Point(526, 74);
             this.hungerlabel.Name = "hungerlabel";
-            this.hungerlabel.Size = new System.Drawing.Size(35, 13);
+            this.hungerlabel.Size = new System.Drawing.Size(100, 23);
             this.hungerlabel.TabIndex = 7;
             this.hungerlabel.Text = "label1";
             // 
             // hygienelabel
             // 
-            this.hygienelabel.AutoSize = true;
             this.hygienelabel.Location = new System.Drawing.Point(577, 132);
             this.hygienelabel.Name = "hygienelabel";
-            this.hygienelabel.Size = new System.Drawing.Size(0, 13);
+            this.hygienelabel.Size = new System.Drawing.Size(100, 23);
             this.hygienelabel.TabIndex = 8;
             // 
             // loolabel
             // 
-            this.loolabel.AutoSize = true;
             this.loolabel.Location = new System.Drawing.Point(576, 194);
             this.loolabel.Name = "loolabel";
-            this.loolabel.Size = new System.Drawing.Size(35, 13);
+            this.loolabel.Size = new System.Drawing.Size(100, 23);
             this.loolabel.TabIndex = 9;
             this.loolabel.Text = "label1";
             // 
             // entertainmentlabel
             // 
-            this.entertainmentlabel.AutoSize = true;
             this.entertainmentlabel.Location = new System.Drawing.Point(529, 227);
             this.entertainmentlabel.Name = "entertainmentlabel";
-            this.entertainmentlabel.Size = new System.Drawing.Size(0, 13);
+            this.entertainmentlabel.Size = new System.Drawing.Size(100, 23);
             this.entertainmentlabel.TabIndex = 10;
             // 
             // mainMenu
