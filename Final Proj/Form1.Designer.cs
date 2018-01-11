@@ -42,6 +42,7 @@
             this.workperfLabel = new System.Windows.Forms.Label();
             this.bankLabel = new System.Windows.Forms.Label();
             this.bankmoneyLabel = new System.Windows.Forms.Label();
+            this.houseScreen = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -178,12 +179,21 @@
             this.bankmoneyLabel.Size = new System.Drawing.Size(52, 23);
             this.bankmoneyLabel.TabIndex = 13;
             // 
+            // houseScreen
+            // 
+            this.houseScreen.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.houseScreen.Location = new System.Drawing.Point(955, 23);
+            this.houseScreen.Name = "houseScreen";
+            this.houseScreen.Size = new System.Drawing.Size(10, 23);
+            this.houseScreen.TabIndex = 14;
+            // 
             // mainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1027, 687);
+            this.Controls.Add(this.houseScreen);
             this.Controls.Add(this.bankmoneyLabel);
             this.Controls.Add(this.bankLabel);
             this.Controls.Add(this.workperfLabel);
@@ -224,6 +234,7 @@
         private System.Windows.Forms.Label workperfLabel;
         private System.Windows.Forms.Label bankLabel;
         private System.Windows.Forms.Label bankmoneyLabel;
+        private System.Windows.Forms.Label houseScreen;
     }
 }
 

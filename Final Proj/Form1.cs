@@ -18,6 +18,7 @@ namespace Final_Proj
         public mainMenu()
         {
             InitializeComponent();
+            houseScreen.Visible = false;
             bankmoneyLabel.Visible = false;
             bankLabel.Visible = false;
             workperfLabel.Visible = false;
@@ -65,7 +66,7 @@ namespace Final_Proj
         public void houseRec(int x, int y, int w, int h)
         {
             //creating method to create the needsbar
-            Graphics Draw = imageT.CreateGraphics();
+            Graphics Draw = houseScreen.CreateGraphics();
             Pen draw = new Pen(Color.Black, 3);
             SolidBrush fill = new SolidBrush(Color.White);
             Draw.DrawRectangle(draw, x, y, w, h);
@@ -75,7 +76,7 @@ namespace Final_Proj
         public void doorRec(int x, int y, int w, int h)
         {
             //creating method to create the needsbar
-            Graphics Draw = imageT.CreateGraphics();
+            Graphics Draw = houseScreen.CreateGraphics();
             Pen draw = new Pen(Color.Black, 3);
             SolidBrush fill = new SolidBrush(Color.Black);
             Draw.DrawRectangle(draw, x, y, w, h);
@@ -113,6 +114,7 @@ namespace Final_Proj
             switch (scene)
             {
                 case 2: //Start Gameplay
+                    houseScreen.Visible = false;
                     bankmoneyLabel.Visible = false;
                     bankLabel.Visible = false;
                     workperfLabel.Visible = false;
@@ -135,6 +137,7 @@ namespace Final_Proj
                     instructionlabel.Text = "Press Y to choose a girl character and Press U to choose a guy character";
                     break;
                 case 3: //how to play
+                    houseScreen.Visible = false;
                     bankmoneyLabel.Visible = false;
                     bankLabel.Visible = false;
                     workperfLabel.Visible = false;
@@ -165,6 +168,7 @@ namespace Final_Proj
                     instructionlabel.Text = "Press Y to proceed";
                     break;
                 case 4: //girl
+                    houseScreen.Visible = false;
                     bankmoneyLabel.Visible = false;
                     bankLabel.Visible = false;
                     workperfLabel.Visible = false;
@@ -187,6 +191,7 @@ namespace Final_Proj
                     instructionlabel.Text = "Press Y for the girl on the right and press U for the girl on the left";
                     break;
                 case 5: //guy
+                    houseScreen.Visible = false;
                     bankmoneyLabel.Visible = false;
                     bankLabel.Visible = false;
                     workperfLabel.Visible = false;
@@ -207,6 +212,7 @@ namespace Final_Proj
                     instructionlabel.Text = "Press Y for the guy on the right and press U for the guy on the left";
                     break;
                 case 6: //girlone
+                    houseScreen.Visible = false;
                     bankmoneyLabel.Visible = false;
                     bankLabel.Visible = false;
                     workperfLabel.Visible = false;
@@ -236,6 +242,7 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 7: //guyone
+                    houseScreen.Visible = false;
                     bankmoneyLabel.Visible = false;
                     bankLabel.Visible = false;
                     workperfLabel.Visible = false;
@@ -265,6 +272,7 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 8: //girltwo
+                    houseScreen.Visible = false;
                     bankmoneyLabel.Visible = false;
                     bankLabel.Visible = false;
                     workperfLabel.Visible = false;
@@ -294,6 +302,7 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 9: //guytwo
+                    houseScreen.Visible = false;
                     bankmoneyLabel.Visible = false;
                     bankLabel.Visible = false;
                     workperfLabel.Visible = false;
@@ -323,6 +332,10 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 10://girlone house scene
+                    houseScreen.Visible = true;
+                    houseScreen.Location = new Point(12, 5);
+                    houseScreen.Size = new Size(746, 385);
+
                     bankLabel.Location = new Point(400, 420);
                     bankLabel.BackColor = Color.Pink;
                     bankLabel.Text = "Bank";
@@ -377,8 +390,6 @@ namespace Final_Proj
                     instructionlabel.Visible = true;///
                     nameinput.Visible = false;///
 
-                    //building the actual scene
-                    houseRec(300, 0, 5, 80);
                     break;
                 case 11://guyone house scene
                     bankLabel.Location = new Point(400, 420);
@@ -441,7 +452,7 @@ namespace Final_Proj
                     bankLabel.Text = "Bank";
                     bankLabel.Visible = true;
                     bankmoneyLabel.BackColor = Color.White;
-                    bankmoneyLabel.Location = new Point(530, 420);
+                    bankmoneyLabel.Location = new Point(530, 410);
                     bankmoneyLabel.Visible = true;
                     workperfLabel.Location = new Point(400, 440);
                     workperfLabel.BackColor = Color.Pink;
@@ -496,7 +507,7 @@ namespace Final_Proj
                     bankLabel.Text = "Bank";
                     bankLabel.Visible = true;
                     bankmoneyLabel.BackColor = Color.White;
-                    bankmoneyLabel.Location = new Point(530, 420);
+                    bankmoneyLabel.Location = new Point(530, 410);
                     bankmoneyLabel.Visible = true;
                     workperfLabel.Location = new Point(400, 440);
                     workperfLabel.BackColor = Color.Blue;
@@ -554,6 +565,5 @@ namespace Final_Proj
         {
 
         }
-        
     }
 }
