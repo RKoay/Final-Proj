@@ -35,7 +35,7 @@ namespace Final_Proj
             howtoplaylabel.Text = "How To Play";
             instructionlabel.Text = "Press Y to start, Press U for how to play";
             //startLabel.Location = new Point(100, 100);
-            ///startLabel.Text = "H";
+            //startLabel.Text = "H";
         }
         public void needsBar(int needsX, int needsY)
         {
