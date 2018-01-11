@@ -260,10 +260,10 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 10://girlone house scene
-                    hungerlabel.ForeColor = Color.White;
-                    entertainmentlabel.ForeColor = Color.White;
-                    loolabel.ForeColor = Color.White;
-                    hygienelabel.ForeColor = Color.White;
+                    hungerlabel.BackColor = Color.Pink;
+                    entertainmentlabel.BackColor = Color.Pink;
+                    loolabel.BackColor = Color.Pink;
+                    hygienelabel.BackColor = Color.Pink;
                     hungerlabel.Location = new Point(120, 420);
                     entertainmentlabel.Location = new Point(120, 440);
                     loolabel.Location = new Point(120, 460);
@@ -352,6 +352,11 @@ namespace Final_Proj
         }
 
         private void nameinput_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void mainMenu_Load(object sender, EventArgs e)
         {
 
         }
