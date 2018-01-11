@@ -18,6 +18,9 @@ namespace Final_Proj
         public mainMenu()
         {
             InitializeComponent();
+            bankmoneyLabel.Visible = false;
+            bankLabel.Visible = false;
+            workperfLabel.Visible = false;
             hungerlabel.Visible = false;
             hygienelabel.Visible = false;
             loolabel.Visible = false;
@@ -37,12 +40,47 @@ namespace Final_Proj
             //startLabel.Location = new Point(100, 100);
             //startLabel.Text = "H";
         }
+        
+
         public void needsBar(int needsX, int needsY)
         {
-            Graphics Draw = this.CreateGraphics();
-            Pen drawNeeds = new Pen(Color.Black, 10);
+            //creating method to create the needsbar
+            Graphics Draw = instructionlabel.CreateGraphics();
+            Pen drawNeeds = new Pen(Color.Black, 3);
             SolidBrush fillNeeds = new SolidBrush(Color.LightGreen);
             Draw.DrawRectangle(drawNeeds, needsX, needsY, 120, 20);
+            Draw.FillRectangle(fillNeeds, needsX, needsY, 120, 20);
+            
+        }
+        public void workperfBar(int workX, int workY)
+        {
+            //creating method to create the needsbar
+            Graphics Draw = instructionlabel.CreateGraphics();
+            Pen drawNeeds = new Pen(Color.Black, 3);
+            SolidBrush fillNeeds = new SolidBrush(Color.Yellow);
+            Draw.DrawRectangle(drawNeeds, workX, workY, 120, 20);
+            Draw.FillRectangle(fillNeeds, workX, workY, 0, 20);
+
+        }
+        public void houseRec(int x, int y, int w, int h)
+        {
+            //creating method to create the needsbar
+            Graphics Draw = imageT.CreateGraphics();
+            Pen draw = new Pen(Color.Black, 3);
+            SolidBrush fill = new SolidBrush(Color.White);
+            Draw.DrawRectangle(draw, x, y, w, h);
+            Draw.FillRectangle(fill, x, y, w, h);
+
+        }
+        public void doorRec(int x, int y, int w, int h)
+        {
+            //creating method to create the needsbar
+            Graphics Draw = imageT.CreateGraphics();
+            Pen draw = new Pen(Color.Black, 3);
+            SolidBrush fill = new SolidBrush(Color.Black);
+            Draw.DrawRectangle(draw, x, y, w, h);
+            Draw.FillRectangle(fill, x, y, w, h);
+
         }
 
 
@@ -71,9 +109,13 @@ namespace Final_Proj
             if (e.KeyCode == Keys.I)
             {
             }
+
             switch (scene)
             {
                 case 2: //Start Gameplay
+                    bankmoneyLabel.Visible = false;
+                    bankLabel.Visible = false;
+                    workperfLabel.Visible = false;
                     hungerlabel.Visible = false;
                     hygienelabel.Visible = false;
                     loolabel.Visible = false;
@@ -93,6 +135,9 @@ namespace Final_Proj
                     instructionlabel.Text = "Press Y to choose a girl character and Press U to choose a guy character";
                     break;
                 case 3: //how to play
+                    bankmoneyLabel.Visible = false;
+                    bankLabel.Visible = false;
+                    workperfLabel.Visible = false;
                     hungerlabel.Visible = false;
                     hygienelabel.Visible = false;
                     loolabel.Visible = false;
@@ -120,6 +165,9 @@ namespace Final_Proj
                     instructionlabel.Text = "Press Y to proceed";
                     break;
                 case 4: //girl
+                    bankmoneyLabel.Visible = false;
+                    bankLabel.Visible = false;
+                    workperfLabel.Visible = false;
                     hungerlabel.Visible = false;
                     hygienelabel.Visible = false;
                     loolabel.Visible = false;
@@ -139,6 +187,9 @@ namespace Final_Proj
                     instructionlabel.Text = "Press Y for the girl on the right and press U for the girl on the left";
                     break;
                 case 5: //guy
+                    bankmoneyLabel.Visible = false;
+                    bankLabel.Visible = false;
+                    workperfLabel.Visible = false;
                     hungerlabel.Visible = false;
                     hygienelabel.Visible = false;
                     loolabel.Visible = false;
@@ -156,6 +207,9 @@ namespace Final_Proj
                     instructionlabel.Text = "Press Y for the guy on the right and press U for the guy on the left";
                     break;
                 case 6: //girlone
+                    bankmoneyLabel.Visible = false;
+                    bankLabel.Visible = false;
+                    workperfLabel.Visible = false;
                     hungerlabel.Visible = false;
                     hygienelabel.Visible = false;
                     loolabel.Visible = false;
@@ -168,12 +222,12 @@ namespace Final_Proj
                     howtoplaylabel.Visible = true;
                     howtoplaylabel.Text = "Press Y to move on";
                     instructionlabel.Location = new Point(12, 400);
-                    instructionlabel.Size = new Size(746, 100);
+                    instructionlabel.Size = new Size(746, 130);
                     instructionlabel.Visible = true;
                     instructionlabel.Text = "";
                     instructionlabel.BackColor = Color.Pink;
                     imageO.Location = new Point(12, 400);
-                    imageO.Size = new Size(100, 100);
+                    imageO.Size = new Size(100, 130);
                     imageO.Visible = true;
                     imageO.Image = Final_Proj.Properties.Resources.girlone;
                     imageT.Visible = false;
@@ -182,6 +236,9 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 7: //guyone
+                    bankmoneyLabel.Visible = false;
+                    bankLabel.Visible = false;
+                    workperfLabel.Visible = false;
                     hungerlabel.Visible = false;
                     hygienelabel.Visible = false;
                     loolabel.Visible = false;
@@ -194,12 +251,12 @@ namespace Final_Proj
                     howtoplaylabel.Visible = true;
                     howtoplaylabel.Text = "Press Y to move on";
                     instructionlabel.Location = new Point(12, 400);
-                    instructionlabel.Size = new Size(746, 100);
+                    instructionlabel.Size = new Size(746, 130);
                     instructionlabel.Visible = true;
                     instructionlabel.Text = "";
                     instructionlabel.BackColor = Color.Blue;
                     imageO.Location = new Point(12, 400);
-                    imageO.Size = new Size(100, 100);
+                    imageO.Size = new Size(100, 130);
                     imageO.Visible = true;
                     imageO.Image = Final_Proj.Properties.Resources.guyone;
                     imageT.Visible = false;
@@ -208,6 +265,9 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 8: //girltwo
+                    bankmoneyLabel.Visible = false;
+                    bankLabel.Visible = false;
+                    workperfLabel.Visible = false;
                     hungerlabel.Visible = false;
                     hygienelabel.Visible = false;
                     loolabel.Visible = false;
@@ -220,12 +280,12 @@ namespace Final_Proj
                     howtoplaylabel.Visible = true;
                     howtoplaylabel.Text = "Press Y to move on";
                     instructionlabel.Location = new Point(12, 400);
-                    instructionlabel.Size = new Size(746, 100);
+                    instructionlabel.Size = new Size(746, 130);
                     instructionlabel.Visible = true;
                     instructionlabel.Text = "";
                     instructionlabel.BackColor = Color.Pink;
                     imageO.Location = new Point(12, 400);
-                    imageO.Size = new Size(100, 100);
+                    imageO.Size = new Size(100, 130);
                     imageO.Visible = true;
                     imageO.Image = Final_Proj.Properties.Resources.girltwo;
                     imageT.Visible = false;
@@ -234,6 +294,9 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 9: //guytwo
+                    bankmoneyLabel.Visible = false;
+                    bankLabel.Visible = false;
+                    workperfLabel.Visible = false;
                     hungerlabel.Visible = false;
                     hygienelabel.Visible = false;
                     loolabel.Visible = false;
@@ -246,12 +309,12 @@ namespace Final_Proj
                     howtoplaylabel.Visible = true;
                     howtoplaylabel.Text = "Press Y to move on";
                     instructionlabel.Location = new Point(12, 400);
-                    instructionlabel.Size = new Size(746, 100);
+                    instructionlabel.Size = new Size(746, 130);
                     instructionlabel.Visible = true;
                     instructionlabel.Text = "";
                     instructionlabel.BackColor = Color.Blue;
                     imageO.Location = new Point(12, 400);
-                    imageO.Size = new Size(100, 100);
+                    imageO.Size = new Size(100, 130);
                     imageO.Visible = true;
                     imageO.Image = Final_Proj.Properties.Resources.guytwo;
                     imageT.Visible = false;
@@ -260,6 +323,20 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 10://girlone house scene
+                    bankLabel.Location = new Point(400, 420);
+                    bankLabel.BackColor = Color.Pink;
+                    bankLabel.Text = "Bank";
+                    bankLabel.Visible = true;
+                    bankmoneyLabel.BackColor = Color.White;
+                    bankmoneyLabel.Location = new Point(530, 410);
+                    bankmoneyLabel.Visible = true;
+                    workperfLabel.Location = new Point(400, 440);
+                    workperfLabel.BackColor = Color.Pink;
+                    workperfLabel.Text = "Work Performance";
+                    workperfLabel.Visible = true;
+
+                    workperfBar(520, 40);
+
                     hungerlabel.BackColor = Color.Pink;
                     entertainmentlabel.BackColor = Color.Pink;
                     loolabel.BackColor = Color.Pink;
@@ -281,6 +358,11 @@ namespace Final_Proj
                     loolabel.Text = "Loo";
                     hygienelabel.Text = "Hygiene";
 
+                    needsBar(250, 10);
+                    needsBar(250, 40);
+                    needsBar(250, 70);
+                    needsBar(250, 100);
+
                     imageO.Visible = true;///
                     imageT.BackColor = Color.White;
                     imageT.Location = new Point(12, 5);
@@ -294,8 +376,51 @@ namespace Final_Proj
                     howtoplaylabel.Visible = false;///
                     instructionlabel.Visible = true;///
                     nameinput.Visible = false;///
+
+                    //building the actual scene
+                    houseRec(300, 0, 5, 80);
                     break;
                 case 11://guyone house scene
+                    bankLabel.Location = new Point(400, 420);
+                    bankLabel.BackColor = Color.Blue;
+                    bankLabel.Text = "Bank";
+                    bankLabel.Visible = true;
+                    bankmoneyLabel.BackColor = Color.White;
+                    bankmoneyLabel.Location = new Point(530, 410);
+                    bankmoneyLabel.Visible = true;
+                    workperfLabel.Location = new Point(400, 440);
+                    workperfLabel.BackColor = Color.Blue;
+                    workperfLabel.Text = "Work Performance";
+                    workperfLabel.Visible = true;
+
+                    workperfBar(520, 40);
+
+                    hungerlabel.BackColor = Color.Blue;
+                    entertainmentlabel.BackColor = Color.Blue;
+                    loolabel.BackColor = Color.Blue;
+                    hygienelabel.BackColor = Color.Blue;
+                    hungerlabel.Location = new Point(120, 420);
+                    entertainmentlabel.Location = new Point(120, 440);
+                    loolabel.Location = new Point(120, 460);
+                    hygienelabel.Location = new Point(120, 480);
+                    hungerlabel.Size = new Size(120, 20);
+                    entertainmentlabel.Size = new Size(120, 20);
+                    loolabel.Size = new Size(120, 20);
+                    hygienelabel.Size = new Size(120, 20);
+                    hungerlabel.Visible = true;
+                    hygienelabel.Visible = true;
+                    loolabel.Visible = true;
+                    entertainmentlabel.Visible = true;
+                    hungerlabel.Text = "Hunger";
+                    entertainmentlabel.Text = "Entertainment";
+                    loolabel.Text = "Loo";
+                    hygienelabel.Text = "Hygiene";
+
+                    needsBar(250, 10);
+                    needsBar(250, 40);
+                    needsBar(250, 70);
+                    needsBar(250, 100);
+
                     imageO.Visible = true;///
                     imageT.BackColor = Color.White;
                     imageT.Location = new Point(12, 5);
@@ -311,6 +436,46 @@ namespace Final_Proj
                     nameinput.Visible = false;///
                     break;
                 case 12://girltwo house scene
+                    bankLabel.Location = new Point(400, 420);
+                    bankLabel.BackColor = Color.Pink;
+                    bankLabel.Text = "Bank";
+                    bankLabel.Visible = true;
+                    bankmoneyLabel.BackColor = Color.White;
+                    bankmoneyLabel.Location = new Point(530, 420);
+                    bankmoneyLabel.Visible = true;
+                    workperfLabel.Location = new Point(400, 440);
+                    workperfLabel.BackColor = Color.Pink;
+                    workperfLabel.Text = "Work Performance";
+                    workperfLabel.Visible = true;
+
+                    workperfBar(520, 40);
+
+                    hungerlabel.BackColor = Color.Pink;
+                    entertainmentlabel.BackColor = Color.Pink;
+                    loolabel.BackColor = Color.Pink;
+                    hygienelabel.BackColor = Color.Pink;
+                    hungerlabel.Location = new Point(120, 420);
+                    entertainmentlabel.Location = new Point(120, 440);
+                    loolabel.Location = new Point(120, 460);
+                    hygienelabel.Location = new Point(120, 480);
+                    hungerlabel.Size = new Size(120, 20);
+                    entertainmentlabel.Size = new Size(120, 20);
+                    loolabel.Size = new Size(120, 20);
+                    hygienelabel.Size = new Size(120, 20);
+                    hungerlabel.Visible = true;
+                    hygienelabel.Visible = true;
+                    loolabel.Visible = true;
+                    entertainmentlabel.Visible = true;
+                    hungerlabel.Text = "Hunger";
+                    entertainmentlabel.Text = "Entertainment";
+                    loolabel.Text = "Loo";
+                    hygienelabel.Text = "Hygiene";
+
+                    needsBar(250, 10);
+                    needsBar(250, 40);
+                    needsBar(250, 70);
+                    needsBar(250, 100);
+
                     imageO.Visible = true;///
                     imageT.BackColor = Color.White;
                     imageT.Location = new Point(12, 5);
@@ -326,6 +491,46 @@ namespace Final_Proj
                     nameinput.Visible = false;///
                     break;
                 case 13://guytwo house scene
+                    bankLabel.Location = new Point(400, 420);
+                    bankLabel.BackColor = Color.Blue;
+                    bankLabel.Text = "Bank";
+                    bankLabel.Visible = true;
+                    bankmoneyLabel.BackColor = Color.White;
+                    bankmoneyLabel.Location = new Point(530, 420);
+                    bankmoneyLabel.Visible = true;
+                    workperfLabel.Location = new Point(400, 440);
+                    workperfLabel.BackColor = Color.Blue;
+                    workperfLabel.Text = "Work Performance";
+                    workperfLabel.Visible = true;
+
+                    workperfBar(520, 40);
+
+                    hungerlabel.BackColor = Color.Blue;
+                    entertainmentlabel.BackColor = Color.Blue;
+                    loolabel.BackColor = Color.Blue;
+                    hygienelabel.BackColor = Color.Blue;
+                    hungerlabel.Location = new Point(120, 420);
+                    entertainmentlabel.Location = new Point(120, 440);
+                    loolabel.Location = new Point(120, 460);
+                    hygienelabel.Location = new Point(120, 480);
+                    hungerlabel.Size = new Size(120, 20);
+                    entertainmentlabel.Size = new Size(120, 20);
+                    loolabel.Size = new Size(120, 20);
+                    hygienelabel.Size = new Size(120, 20);
+                    hungerlabel.Visible = true;
+                    hygienelabel.Visible = true;
+                    loolabel.Visible = true;
+                    entertainmentlabel.Visible = true;
+                    hungerlabel.Text = "Hunger";
+                    entertainmentlabel.Text = "Entertainment";
+                    loolabel.Text = "Loo";
+                    hygienelabel.Text = "Hygiene";
+
+                    needsBar(250, 10);
+                    needsBar(250, 40);
+                    needsBar(250, 70);
+                    needsBar(250, 100);
+
                     imageO.Visible = true;///
                     imageT.BackColor = Color.White;
                     imageT.Location = new Point(12, 5);
@@ -341,12 +546,6 @@ namespace Final_Proj
                     nameinput.Visible = false;///
                     break;
 
-
-
-
-
-
-
             }
 
         }
@@ -355,10 +554,6 @@ namespace Final_Proj
         {
 
         }
-
-        private void mainMenu_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

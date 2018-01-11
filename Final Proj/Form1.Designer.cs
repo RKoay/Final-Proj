@@ -39,6 +39,9 @@
             this.hygienelabel = new System.Windows.Forms.Label();
             this.loolabel = new System.Windows.Forms.Label();
             this.entertainmentlabel = new System.Windows.Forms.Label();
+            this.workperfLabel = new System.Windows.Forms.Label();
+            this.bankLabel = new System.Windows.Forms.Label();
+            this.bankmoneyLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -106,7 +109,7 @@
             // nameinput
             // 
             this.nameinput.Location = new System.Drawing.Point(416, 647);
-            this.nameinput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nameinput.Margin = new System.Windows.Forms.Padding(4);
             this.nameinput.Name = "nameinput";
             this.nameinput.Size = new System.Drawing.Size(132, 22);
             this.nameinput.TabIndex = 6;
@@ -114,6 +117,7 @@
             // 
             // hungerlabel
             // 
+            this.hungerlabel.ForeColor = System.Drawing.Color.Black;
             this.hungerlabel.Location = new System.Drawing.Point(701, 91);
             this.hungerlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hungerlabel.Name = "hungerlabel";
@@ -123,6 +127,7 @@
             // 
             // hygienelabel
             // 
+            this.hygienelabel.ForeColor = System.Drawing.Color.Black;
             this.hygienelabel.Location = new System.Drawing.Point(769, 162);
             this.hygienelabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hygienelabel.Name = "hygienelabel";
@@ -131,20 +136,47 @@
             // 
             // loolabel
             // 
+            this.loolabel.ForeColor = System.Drawing.Color.Black;
             this.loolabel.Location = new System.Drawing.Point(768, 239);
             this.loolabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.loolabel.Name = "loolabel";
             this.loolabel.Size = new System.Drawing.Size(133, 28);
             this.loolabel.TabIndex = 9;
-            this.loolabel.Text = "label1";
             // 
             // entertainmentlabel
             // 
+            this.entertainmentlabel.ForeColor = System.Drawing.Color.Black;
             this.entertainmentlabel.Location = new System.Drawing.Point(705, 279);
             this.entertainmentlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.entertainmentlabel.Name = "entertainmentlabel";
             this.entertainmentlabel.Size = new System.Drawing.Size(133, 28);
             this.entertainmentlabel.TabIndex = 10;
+            // 
+            // workperfLabel
+            // 
+            this.workperfLabel.AutoSize = true;
+            this.workperfLabel.ForeColor = System.Drawing.Color.Black;
+            this.workperfLabel.Location = new System.Drawing.Point(488, 209);
+            this.workperfLabel.Name = "workperfLabel";
+            this.workperfLabel.Size = new System.Drawing.Size(0, 17);
+            this.workperfLabel.TabIndex = 11;
+            // 
+            // bankLabel
+            // 
+            this.bankLabel.AutoSize = true;
+            this.bankLabel.ForeColor = System.Drawing.Color.Black;
+            this.bankLabel.Location = new System.Drawing.Point(656, 259);
+            this.bankLabel.Name = "bankLabel";
+            this.bankLabel.Size = new System.Drawing.Size(0, 17);
+            this.bankLabel.TabIndex = 12;
+            // 
+            // bankmoneyLabel
+            // 
+            this.bankmoneyLabel.ForeColor = System.Drawing.Color.Black;
+            this.bankmoneyLabel.Location = new System.Drawing.Point(451, 67);
+            this.bankmoneyLabel.Name = "bankmoneyLabel";
+            this.bankmoneyLabel.Size = new System.Drawing.Size(52, 23);
+            this.bankmoneyLabel.TabIndex = 13;
             // 
             // mainMenu
             // 
@@ -152,6 +184,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1027, 687);
+            this.Controls.Add(this.bankmoneyLabel);
+            this.Controls.Add(this.bankLabel);
+            this.Controls.Add(this.workperfLabel);
             this.Controls.Add(this.entertainmentlabel);
             this.Controls.Add(this.loolabel);
             this.Controls.Add(this.hygienelabel);
@@ -163,10 +198,10 @@
             this.Controls.Add(this.howtoplaylabel);
             this.Controls.Add(this.startLabel);
             this.Controls.Add(this.titleLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ForeColor = System.Drawing.Color.White;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "mainMenu";
             this.Text = "MAIN MENU";
-            this.Load += new System.EventHandler(this.mainMenu_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mainMenu_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -186,6 +221,9 @@
         private System.Windows.Forms.Label hygienelabel;
         private System.Windows.Forms.Label loolabel;
         private System.Windows.Forms.Label entertainmentlabel;
+        private System.Windows.Forms.Label workperfLabel;
+        private System.Windows.Forms.Label bankLabel;
+        private System.Windows.Forms.Label bankmoneyLabel;
     }
 }
 
