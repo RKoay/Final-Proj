@@ -73,16 +73,16 @@ namespace Final_Proj
             Draw.FillRectangle(fill, x, y, w, h);
 
         }
-        public void doorRec(int x, int y, int w, int h)
-        {
-            //creating method to create the needsbar
-            Graphics Draw = houseScreen.CreateGraphics();
-            Pen draw = new Pen(Color.Black, 3);
-            SolidBrush fill = new SolidBrush(Color.Black);
-            Draw.DrawRectangle(draw, x, y, w, h);
-            Draw.FillRectangle(fill, x, y, w, h);
+        //public void doorRec(int x, int y, int w, int h)
+        //{
+        //    //creating method to create the needsbar
+        //    Graphics Draw = houseScreen.CreateGraphics();
+        //    Pen draw = new Pen(Color.Black, 3);
+        //    SolidBrush fill = new SolidBrush(Color.Black);
+        //    Draw.DrawRectangle(draw, x, y, w, h);
+        //    Draw.FillRectangle(fill, x, y, w, h);
 
-        }
+        //}
 
 
         private void mainMenu_KeyDown(object sender, KeyEventArgs e)
@@ -261,7 +261,7 @@ namespace Final_Proj
                     instructionlabel.Size = new Size(746, 130);
                     instructionlabel.Visible = true;
                     instructionlabel.Text = "";
-                    instructionlabel.BackColor = Color.Blue;
+                    instructionlabel.BackColor = Color.LightBlue;
                     imageO.Location = new Point(12, 400);
                     imageO.Size = new Size(100, 130);
                     imageO.Visible = true;
@@ -321,7 +321,7 @@ namespace Final_Proj
                     instructionlabel.Size = new Size(746, 130);
                     instructionlabel.Visible = true;
                     instructionlabel.Text = "";
-                    instructionlabel.BackColor = Color.Blue;
+                    instructionlabel.BackColor = Color.LightBlue;
                     imageO.Location = new Point(12, 400);
                     imageO.Size = new Size(100, 130);
                     imageO.Visible = true;
@@ -335,6 +335,17 @@ namespace Final_Proj
                     houseScreen.Visible = true;
                     houseScreen.Location = new Point(12, 5);
                     houseScreen.Size = new Size(746, 385);
+                    //house scene
+                    houseRec(250, 0, 5, 80);
+                    houseRec(250, 120, 5, 100);
+                    houseRec(250, 220, 5, 60);
+                    houseRec(250, 325, 5, 60);
+                    houseRec(0, 220, 250, 5);
+                    houseRec(296, 0, 5, 80);
+                    houseRec(296, 120, 5, 120);
+                    houseRec(296, 220, 5, 165);
+                    houseRec(296, 220, 200, 5);
+                    houseRec(541, 220, 200, 5);
 
                     bankLabel.Location = new Point(400, 420);
                     bankLabel.BackColor = Color.Pink;
@@ -393,23 +404,23 @@ namespace Final_Proj
                     break;
                 case 11://guyone house scene
                     bankLabel.Location = new Point(400, 420);
-                    bankLabel.BackColor = Color.Blue;
+                    bankLabel.BackColor = Color.LightBlue;
                     bankLabel.Text = "Bank";
                     bankLabel.Visible = true;
                     bankmoneyLabel.BackColor = Color.White;
                     bankmoneyLabel.Location = new Point(530, 410);
                     bankmoneyLabel.Visible = true;
                     workperfLabel.Location = new Point(400, 440);
-                    workperfLabel.BackColor = Color.Blue;
+                    workperfLabel.BackColor = Color.LightBlue;
                     workperfLabel.Text = "Work Performance";
                     workperfLabel.Visible = true;
 
                     workperfBar(520, 40);
 
-                    hungerlabel.BackColor = Color.Blue;
-                    entertainmentlabel.BackColor = Color.Blue;
-                    loolabel.BackColor = Color.Blue;
-                    hygienelabel.BackColor = Color.Blue;
+                    hungerlabel.BackColor = Color.LightBlue;
+                    entertainmentlabel.BackColor = Color.LightBlue;
+                    loolabel.BackColor = Color.LightBlue;
+                    hygienelabel.BackColor = Color.LightBlue;
                     hungerlabel.Location = new Point(120, 420);
                     entertainmentlabel.Location = new Point(120, 440);
                     loolabel.Location = new Point(120, 460);
@@ -503,23 +514,23 @@ namespace Final_Proj
                     break;
                 case 13://guytwo house scene
                     bankLabel.Location = new Point(400, 420);
-                    bankLabel.BackColor = Color.Blue;
+                    bankLabel.BackColor = Color.LightBlue;
                     bankLabel.Text = "Bank";
                     bankLabel.Visible = true;
                     bankmoneyLabel.BackColor = Color.White;
                     bankmoneyLabel.Location = new Point(530, 410);
                     bankmoneyLabel.Visible = true;
                     workperfLabel.Location = new Point(400, 440);
-                    workperfLabel.BackColor = Color.Blue;
+                    workperfLabel.BackColor = Color.LightBlue;
                     workperfLabel.Text = "Work Performance";
                     workperfLabel.Visible = true;
 
                     workperfBar(520, 40);
 
-                    hungerlabel.BackColor = Color.Blue;
-                    entertainmentlabel.BackColor = Color.Blue;
-                    loolabel.BackColor = Color.Blue;
-                    hygienelabel.BackColor = Color.Blue;
+                    hungerlabel.BackColor = Color.LightBlue;
+                    entertainmentlabel.BackColor = Color.LightBlue;
+                    loolabel.BackColor = Color.LightBlue;
+                    hygienelabel.BackColor = Color.LightBlue;
                     hungerlabel.Location = new Point(120, 420);
                     entertainmentlabel.Location = new Point(120, 440);
                     loolabel.Location = new Point(120, 460);
