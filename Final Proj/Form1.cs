@@ -18,6 +18,7 @@ namespace Final_Proj
         public mainMenu()
         {
             InitializeComponent();
+            
             houseScreen.Visible = false;
             bankmoneyLabel.Visible = false;
             bankLabel.Visible = false;
@@ -68,7 +69,7 @@ namespace Final_Proj
             //creating method to create the needsbar
             Graphics Draw = houseScreen.CreateGraphics();
             Pen draw = new Pen(Color.Black, 3);
-            SolidBrush fill = new SolidBrush(Color.White);
+            SolidBrush fill = new SolidBrush(Color.Gray);
             Draw.DrawRectangle(draw, x, y, w, h);
             Draw.FillRectangle(fill, x, y, w, h);
 
@@ -332,9 +333,9 @@ namespace Final_Proj
                     username = nameinput.Text;
                     break;
                 case 10://girlone house scene
-                    houseScreen.Visible = true;
                     houseScreen.Location = new Point(12, 5);
                     houseScreen.Size = new Size(746, 385);
+                    houseScreen.Visible = true;
                     //house scene
                     houseRec(250, 0, 5, 80);
                     houseRec(250, 120, 5, 100);
@@ -346,6 +347,7 @@ namespace Final_Proj
                     houseRec(296, 220, 5, 165);
                     houseRec(296, 220, 200, 5);
                     houseRec(541, 220, 200, 5);
+
 
                     bankLabel.Location = new Point(400, 420);
                     bankLabel.BackColor = Color.Pink;
@@ -389,13 +391,10 @@ namespace Final_Proj
 
                     imageO.Visible = true;///
                     imageT.BackColor = Color.White;
-                    imageT.Location = new Point(12, 5);
-                    imageT.Size = new Size(746, 385);
-                    imageT.Image = null;
-                    imageT.Visible = true;///
+                    imageT.Visible = false;///
                     titleLabel.Visible = false;///
                     startLabel.Location = new Point(274,400);
-                    startLabel.Visible = true;///
+                    startLabel.Visible = false;///
                     startLabel.Text = username;
                     howtoplaylabel.Visible = false;///
                     instructionlabel.Visible = true;///
@@ -445,10 +444,8 @@ namespace Final_Proj
 
                     imageO.Visible = true;///
                     imageT.BackColor = Color.White;
-                    imageT.Location = new Point(12, 5);
-                    imageT.Size = new Size(746, 385);
                     imageT.Image = null;
-                    imageT.Visible = true;///
+                    imageT.Visible = false;///
                     titleLabel.Visible = false;///
                     startLabel.Location = new Point(274, 400);
                     startLabel.Visible = true;///
@@ -500,10 +497,8 @@ namespace Final_Proj
 
                     imageO.Visible = true;///
                     imageT.BackColor = Color.White;
-                    imageT.Location = new Point(12, 5);
-                    imageT.Size = new Size(746, 385);
                     imageT.Image = null;
-                    imageT.Visible = true;///
+                    imageT.Visible = false;///
                     titleLabel.Visible = false;///
                     startLabel.Location = new Point(274, 400);
                     startLabel.Visible = true;///
@@ -555,10 +550,8 @@ namespace Final_Proj
 
                     imageO.Visible = true;///
                     imageT.BackColor = Color.White;
-                    imageT.Location = new Point(12, 5);
-                    imageT.Size = new Size(746, 385);
                     imageT.Image = null;
-                    imageT.Visible = true;///
+                    imageT.Visible = false;///
                     titleLabel.Visible = false;///
                     startLabel.Location = new Point(274, 400);
                     startLabel.Visible = true;///
